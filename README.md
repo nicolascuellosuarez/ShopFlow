@@ -57,7 +57,7 @@ Transformar la operación comercial tradicional en un proceso digitalizado y efi
 - Proceso de compra simplificado y eficiente
 - Historial de compras accesible
 
-## Estructura del Proyecto
+## Estructura del Proyecto
 
 `shopflow/`
 
