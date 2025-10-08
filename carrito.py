@@ -2,22 +2,22 @@ from producto import Producto
 from inventario import Inventario
 
 class Carrito:
-    def _init_(self, id, cliente):
+    def _init_(self, id, cliente) -> None:
         self.__id = id
         self.__cliente = cliente
         self.__productos = {}
         self.__estado = "activo"
     
-    def get_id(self):
+    def get_id(self) -> str:
         return self.__id
     
-    def get_cliente(self):
+    def get_cliente(self) -> object:
         return self.__cliente
     
-    def get_productos(self):
+    def get_productos(self) -> Dict[Producto, int]:
         return self.__productos.copy()
     
-    def agregar_producto(self, producto, cantidad, inventario):
+    def agregar_producto(self, producto, cantidad, inventario) -> bool:
         if not inventario.verificar_disponibilidad(producto.get_id(), cantidad):
             return False
         
@@ -27,13 +27,13 @@ class Carrito:
             self.__productos[producto] = cantidad
         return True
     
-    def eliminar_producto(self, producto):
+    def eliminar_producto(self, producto) -> bool:
         if producto in self.__productos:
             del self.__productos[producto]
             return True
         return False
     
-    def actualizar_cantidad(self, producto, nueva_cantidad, inventario):
+    def actualizar_cantidad(self, producto, nueva_cantidad, inventario) -> bool:
         if producto not in self.__productos:
             return False
         
@@ -43,22 +43,22 @@ class Carrito:
         self.__productos[producto] = nueva_cantidad
         return True
     
-    def calcular_total(self):
+    def calcular_total(self) -> float:
         total = 0
         for producto, cantidad in self.__productos.items():
             total += producto.get_precio() * cantidad
         return total
     
-    def vaciar(self):
+    def vaciar(self) -> None:
         self.__productos.clear()
     
-    def verificar_stock(self, inventario):
+    def verificar_stock(self, inventario) -> bool:
         for producto, cantidad in self.__productos.items():
             if not inventario.verificar_disponibilidad(producto.get_id(), cantidad):
                 return False
         return True
     
-    def _str_(self):
+    def _str_(self) -> str:
         if not self.__productos:
             return f"Carrito {self.__id} vacío"
         
