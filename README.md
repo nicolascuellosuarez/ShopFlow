@@ -61,15 +61,13 @@ Transformar la operación comercial tradicional en un proceso digitalizado y efi
 
 `shopflow/`
 
-`models/` # Clases del sistema
+`modelos/` # Clases del sistema
 
-`services/` # Lógica de negocio
+`servicios/` # Lógica de negocio
 
-`utils/` # Utilidades y helpers
+`utilidades/` # Utilidades y helpers
 
-`tests/` # Pruebas unitarias
-
-`docs/` # Documentación
+`pruebas/` # Pruebas unitarias
 
 Tecnologías Utilizadas
 Python 3.x: Lenguaje de programación principal
