@@ -4,7 +4,7 @@ from cliente import Cliente
 from carrito import Carrito
 from pedido import Pedido
 
-def test_producto():
+def test_producto()->None:
     print(" TEST PRODUCTO ")
     p = Producto("P001", "Test Product", "Test", 100.0, 10)
     assert p.get_id() == "P001"
