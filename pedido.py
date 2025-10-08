@@ -36,7 +36,7 @@ class Pedido:
     def actualizar_estado(self, nuevo_estado)->str:
         self.__estado = nuevo_estado
     
-    def generar_comprobante(self):
+    def generar_comprobante(self)->str:
         comprobante = f"COMPROBANTE DE PEDIDO\n"
         comprobante += f"ID: {self.__id}\n"
         comprobante += f"Cliente: {self.__cliente.get_nombre()}\n"
