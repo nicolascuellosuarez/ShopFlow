@@ -33,7 +33,7 @@ class Pedido:
             total += producto.get_precio() * cantidad
         return total
     
-    def actualizar_estado(self, nuevo_estado)->None:
+    def actualizar_estado(self, nuevo_estado)->str:
         self.__estado = nuevo_estado
     
     def generar_comprobante(self):
