@@ -57,36 +57,18 @@ Transformar la operación comercial tradicional en un proceso digitalizado y efi
 - Proceso de compra simplificado y eficiente
 - Historial de compras accesible
 
-## Estructura del Proyecto
+## Tecnologías Utilizadas
+- Python 3.x: Lenguaje de programación principal
+- POO: Paradigma de desarrollo orientado a objetos
+- Estructuras de Datos: Listas, diccionarios, tuplas
+- Manejo de Fechas: Gestión de timestamps y historiales
 
-`shopflow/`
-
-`modelos/` # Clases del sistema
-
-`servicios/` # Lógica de negocio
-
-`utilidades/` # Utilidades y helpers
-
-`pruebas/` # Pruebas unitarias
-
-Tecnologías Utilizadas
-Python 3.x: Lenguaje de programación principal
-
-POO: Paradigma de desarrollo orientado a objetos
-
-Estructuras de Datos: Listas, diccionarios, tuplas
-
-Manejo de Fechas: Gestión de timestamps y historiales
-
-Equipo de Desarrollo
+## Equipo de Desarrollo
 
 Integrantes:
-
-Carvajal Samuel
-
-Jose Berrío
-
-Nicolas Cuello
+- Carvajal Samuel
+- Jose Berrío
+- Nicolas Cuello
 
 Asignatura: Programación Orientada a Objetos
 
