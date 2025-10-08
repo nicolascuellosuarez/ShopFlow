@@ -5,7 +5,22 @@ class Producto:
         self.__categoria_: str = categoria
         self.__precio: float = precio
         self.__stock: int = stock
+        
+    def get_id(self) -> str:
+        return self.__id
     
+    def get_nombre(self) -> str:
+        return self.__nombre
+    
+    def get_categoria(self) -> str:
+        return self.__categoria
+    
+    def get_precio(self) -> float:
+        return self.__precio
+    
+    def get_stock(self) -> int:
+        return self.__stock
+        
     def actualizar_precio(self, nuevo_precio):
         if nuevo_precio > 0:
             self.__precio = nuevo_precio
